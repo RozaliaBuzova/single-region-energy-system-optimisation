@@ -4,6 +4,9 @@ A modelling project to create a simple energy system.
 
 Using linear optimisation to determine electricity generation portfolio and electricity dispatch, whilst minimising cost under constraints.
 
+"Single_Region_Energy_Model_Clean.ipynb" - Clean code
+"Single_Region_Energy_Model_Local.ipynb" - Work in progress (WIP) code
+
 ## Model Inputs
 
 Input data (e.g., technology costs, capacity factor, etc.) and modelling guidance taken from the Massice Online Open Course (MOOC) on Modelling & Measuring the Energy Transition by Politecnico di Milano on Coursera. 
@@ -19,6 +22,18 @@ Key outputs:
 - Amount of new technology capacities required to be built
 - Yearly dispatch values of each technology
 
+## Model iterations compared
+The following models were optimised and compared to determine the impact of each of the constraints
+- Baseline - model with no particular constrains apart from supply = demand
+- With carbon tax - Baseline model + a carbon tax of 45$/tCO2
+- With land limitation - Baseline model + new renewables land limitation to 20km2
+- With renewables subsidies - Baseline model + renewables subsidies equal to 20% of initial investmnet (capex)
+
 ## Solver
 
 Solver - CBC, used directly through Pulp in Python
+
+## Python libraries used
+- PuLP
+- Pandas
+- Matplotlib
