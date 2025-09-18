@@ -5,6 +5,7 @@ A modelling project to create a simple energy system.
 Using linear optimisation to determine electricity generation portfolio and electricity dispatch, whilst minimising cost under constraints.
 
 "Single_Region_Energy_Model_Clean.ipynb" - Clean code
+
 "Single_Region_Energy_Model_Local.ipynb" - Work in progress (WIP) code
 
 ## Model Inputs
