@@ -1,3 +1,4 @@
 anaconda_projects/
 .ipynb_checkpoints/
 Single_Region_Energy_Model_Clean_v1.ipynb
+.gitignore
