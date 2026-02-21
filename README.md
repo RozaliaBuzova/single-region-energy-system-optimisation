@@ -1,40 +1,55 @@
 # Single Region Energy System Optimisation Project
 
-A modelling project to create a simple energy system. 
+## Project Overview
 
-Using linear optimisation to determine electricity generation portfolio and electricity dispatch, whilst minimising cost under constraints.
+This project implements a linear optimisation model of an electricity system for a single region.
+The model determines the cost-optimal generation mix and dispatch under different policy and system constraints.
 
-"Single_Region_Energy_Model_Clean.ipynb" - Clean code
+It was developed to demonstrate skills in:
+- Python programming
+- Data analysis & processing
+- Mathematical optimisation (linear programming)
+- Scenario modelling
+- Data visualisation
 
-"Single_Region_Energy_Model_Local.ipynb" - Work in progress (WIP) code
+## Objectives
 
-## Model Inputs
+The goal of the model is to:
+   
+  *Minimise total system cost while meeting electricity demand
+    subject to technical, economic, and policy constraints.*
 
-Input data (e.g., technology costs, capacity factor, etc.) and modelling guidance taken from the Massice Online Open Course (MOOC) on Modelling & Measuring the Energy Transition by Politecnico di Milano on Coursera. 
+The optimisation considers:
+- Generation technologies (e.g., wind, solar, fossil)
+- Capacity limits
+- Demand balance
+- Policy constraints (carbon tax, land limits, subsidies)
 
-Space resolution - single-region
+## Methodology
+The model is formulated as a linear programming (LP) problem and solved using:
+- PuLP – optimisation modelling
+- pandas – data handling
+- matplotlib – visualisation
+- Solver - CBC, used directly through Pulp in Python
 
-Time resolution - years
+Core Components
+* Decision variables:
+    * Installed generation capacity
+    * Electricity dispatch
+* Objective function:
+    * Minimise total system costs
+* Constraints:
+  * Demand satisfaction
+  * Capacity limits
+  * Policy scenarios
 
-## Model Outputs
+## Scenarios Analysed
+The project evaluates how different constraints affect the optimal system design:
+* Baseline scenario
+* Carbon tax scenario
+* Land constraint scenario
+* Subsidy scenario
 
-Key outputs:
+This enables comparative policy analysis.
 
-- Amount of new technology capacities required to be built
-- Yearly dispatch values of each technology
-
-## Model iterations compared
-The following models were optimised and compared to determine the impact of each of the constraints
-- Baseline - model with no particular constrains apart from supply = demand
-- With carbon tax - Baseline model + a carbon tax of 45$/tCO2
-- With land limitation - Baseline model + new renewables land limitation to 20km2
-- With renewables subsidies - Baseline model + renewables subsidies equal to 20% of initial investmnet (capex)
-
-## Solver
-
-Solver - CBC, used directly through Pulp in Python
-
-## Python libraries used
-- PuLP
-- Pandas
-- Matplotlib
+## Example Outputs
