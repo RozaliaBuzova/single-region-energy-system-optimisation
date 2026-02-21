@@ -1,5 +1,6 @@
 # Single Region Energy System Optimisation Project
-
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+![Static Badge](https://img.shields.io/badge/Status-In_Progress-orange)
 ## Project Overview
 
 This project implements a linear optimisation model of an electricity system for a single region.
