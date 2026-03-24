@@ -3,54 +3,26 @@
 ![Static Badge](https://img.shields.io/badge/Status-In_Progress-orange)
 ## Project Overview
 
-This project implements a linear optimisation model of an electricity system for a single region.
-The model determines the cost-optimal generation mix and dispatch under different policy and system constraints.
+<ins>**Aim:**</ins> Determine the minimum cost power generation mix under different constraints 
 
-It was developed to demonstrate skills in:
-- Python programming
-- Data analysis & processing
-- Mathematical optimisation (linear programming)
-- Scenario modelling
-- Data visualisation
+<ins>**Objective:**</ins>  Implement a linear optimisation model of the electricity system of a single region
 
-## Objectives
+<ins>**Electricity generation technologies:**</ins> Fossil  |  Renewables 
 
-The goal of the model is to:
-   
-  *Minimise total system cost while meeting electricity demand
-    subject to technical, economic, and policy constraints.*
+<ins>**Scenarios:**</ins> Carbon tax  |  Renewables subsidy  |  Land limitation 
 
-The optimisation considers:
-- Generation technologies (e.g., wind, solar, fossil)
-- Capacity limits
-- Demand balance
-- Policy constraints (carbon tax, land limits, subsidies)
+## Technical Skills
+<ins>**Python libraries:</ins>** matplotlib  |  pandas  |  PuLP
 
-## Methodology
-The model is formulated as a linear programming (LP) problem and solved using:
-- PuLP – optimisation modelling
-- pandas – data handling
-- matplotlib – visualisation
-- Solver - CBC, used directly through Pulp in Python
+<ins>**Skills:</ins>** Linear optimisation  |  Scenario modelling  |  Data visualisation
 
-Core Components
-* Decision variables:
-    * Installed generation capacity
-    * Electricity dispatch
-* Objective function:
-    * Minimise total system costs
-* Constraints:
-  * Demand satisfaction
-  * Capacity limits
-  * Policy scenarios
+## Analysis
+### Baseline scenario
+Represents the electricity system with no intervention. 
+Starting capacities: 
+- Fossil: 5 GW
+- Renewable: 0 GW
 
-## Scenarios Analysed
-The project evaluates how different constraints affect the optimal system design:
-* Baseline scenario
-* Carbon tax scenario
-* Land constraint scenario
-* Subsidy scenario
+The evolution of installed capacity and dispatch is shown below: 
 
-This enables comparative policy analysis.
-
-## Example Outputs
+![Energy Mix](Baseline - Summary.png)
