@@ -1,6 +1,7 @@
 # Single Region Energy System Optimisation Project
 ![Python](https://img.shields.io/badge/Python-3.14-blue)
-![Static Badge](https://img.shields.io/badge/Status-In_Progress-orange)
+![Static Badge](https://img.shields.io/badge/Status-Complete-green)
+
 ## Project Overview
 
 <ins>**Aim:**</ins> Determine the minimum cost power generation mix under different constraints 
